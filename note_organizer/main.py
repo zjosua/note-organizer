@@ -140,7 +140,7 @@ def onReviewerOrgMenu(command, offset):
     nid = note.id
     
     # rearrange in context of origin deck
-    search = "deck:'{}'".format(deck)
+    search = 'deck:"{}"'.format(deck)
     note_pool = mw.col.findNotes(search)
     note_pool.sort()
     try:
